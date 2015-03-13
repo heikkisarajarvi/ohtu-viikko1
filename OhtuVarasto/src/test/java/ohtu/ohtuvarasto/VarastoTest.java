@@ -27,7 +27,7 @@ public class VarastoTest {
 
     @Test
     public void uudellaVarastollaOikeaTilavuus() {
-        assertEquals( varasto.getTilavuus(), vertailuTarkkuus);
+        assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class VarastoTest {
         varasto.lisaaVarastoon(8);
 
         // saldon pitäisi olla sama kun lisätty määrä
-        asrtEquals(8, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(8, varasto.getSaldo(), vertailuTarkkuus);
     }
 
     @Test
