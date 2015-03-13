@@ -76,4 +76,3 @@ public class VarastoTest {
         varasto.toString();
     }
 }
-
